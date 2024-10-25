@@ -1,10 +1,10 @@
 # Exercícios básicos
 
 ## Soma simples
-Crie uma função que receba dois números e retorne a soma deles.
+Crie uma função que receba dois números e retorne a soma deles.✅
 
 ## Par ou ímpar
-Escreva uma função que receba um número e retorne true se for par ou false se for ímpar.
+Escreva uma função que receba um número e retorne true se for par ou false se for ímpar.✅
 
 ## Calcular fatorial
 Crie uma função que calcule o fatorial de um número inteiro fornecido como argumento.
