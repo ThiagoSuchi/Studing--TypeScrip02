@@ -10,7 +10,7 @@ Escreva uma função que receba um número e retorne true se for par ou false se
 Crie uma função que calcule o fatorial de um número inteiro fornecido como argumento.✅
 
 ## String invertida
-Faça uma função que receba uma string e retorne a mesma string invertida.
+Faça uma função que receba uma string e retorne a mesma string invertida.✅
 
 ## Contar vogais
 Escreva uma função que conte e retorne o número de vogais em uma string.
