@@ -1,9 +1,9 @@
 "use strict";
 function factoryNumber(num) {
-    let number = 0;
-    while (num > 0) {
-        number = num - 1;
+    let resultado = 1;
+    for (let i = 1; i <= num; i++) {
+        resultado *= i;
     }
-    console.log(number);
+    return resultado;
 }
 console.log(factoryNumber(4));
