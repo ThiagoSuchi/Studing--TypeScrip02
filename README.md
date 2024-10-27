@@ -7,7 +7,7 @@ Crie uma função que receba dois números e retorne a soma deles.✅
 Escreva uma função que receba um número e retorne true se for par ou false se for ímpar.✅
 
 ## Calcular fatorial
-Crie uma função que calcule o fatorial de um número inteiro fornecido como argumento.
+Crie uma função que calcule o fatorial de um número inteiro fornecido como argumento.✅
 
 ## String invertida
 Faça uma função que receba uma string e retorne a mesma string invertida.
