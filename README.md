@@ -13,7 +13,7 @@ Crie uma função que calcule o fatorial de um número inteiro fornecido como ar
 Faça uma função que receba uma string e retorne a mesma string invertida.✅
 
 ## Contar vogais
-Escreva uma função que conte e retorne o número de vogais em uma string.
+Escreva uma função que conte e retorne o número de vogais em uma string.✅
 
 ## Número primo
 Crie uma função que determine se um número é primo.
