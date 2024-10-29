@@ -19,7 +19,7 @@ Escreva uma função que conte e retorne o número de vogais em uma string.✅
 Crie uma função que determine se um número é primo.✅
 
 ## Calcular média
-Dada uma lista de números, crie uma função que calcule e retorne a média dos números.
+Dada uma lista de números, crie uma função que calcule e retorne a média dos números.✅
 
 ## Maior número
 Escreva uma função que receba um array de números e retorne o maior número.
