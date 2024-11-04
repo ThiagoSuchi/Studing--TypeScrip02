@@ -1,5 +1,4 @@
 # Exercícios básicos
-
 ## Soma simples
 Crie uma função que receba dois números e retorne a soma deles.✅
 
@@ -29,9 +28,9 @@ Crie uma função que ordene um array de números em ordem crescente.
 
 ## Conversão de temperatura
 Escreva uma função que converta graus Celsius para Fahrenheit e vice-versa.
+-----------------------------------------------------------------------------------------
 
 # Exercícios intermediários
-
 ## Números Fibonacci
 Escreva uma função que receba um número n e retorne os n primeiros números da sequência de Fibonacci.
 
@@ -61,9 +60,9 @@ Crie uma função que conte o número de palavras em uma string.
 
 ## Unir arrays
 Dada uma lista de arrays, crie uma função que una todos os arrays em um único array sem duplicatas.
+-----------------------------------------------------------------------------------------
 
 # Exercícios avançados
-
 ## Números perfeitos
 Escreva uma função que verifique se um número é perfeito (a soma de seus divisores é igual a ele próprio).
 
@@ -93,3 +92,4 @@ Escreva uma função que valide uma data no formato DD/MM/YYYY.
 
 ## Contagem de dias entre datas
 Crie uma função que receba duas datas (formato Date) e retorne a quantidade de dias entre elas.
+-----------------------------------------------------------------------------------------
