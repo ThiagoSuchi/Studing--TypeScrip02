@@ -9,6 +9,7 @@ function conversor (temperatura: number, escala: string): number | undefined  {
         let Celsius = (temperatura - 32) / 1.8
         return Celsius
     } 
+    
 }
 
 console.log(conversor(68, 'Celsius'));
