@@ -62,34 +62,34 @@ Crie uma função que conte o número de palavras em uma string.
 Dada uma lista de arrays, crie uma função que una todos os arrays em um único array sem duplicatas.
 -----------------------------------------------------------------------------------------
 
-# Exercícios avançados
-## Números perfeitos
-Escreva uma função que verifique se um número é perfeito (a soma de seus divisores é igual a ele próprio).
+## Exercícios avançados
+# Números Perfeitos
+Determine se um número é perfeito verificando se a soma de todos os seus divisores (exceto ele mesmo) é igual ao próprio número. Realize os cálculos e demonstre o processo.
 
-## Validador de CPF
-Crie uma função que valide um CPF (considerando os dígitos verificadores).
+# Validador de CPF
+Com base em um CPF fornecido, realize o cálculo dos dígitos verificadores para verificar sua validade. Explique como os dígitos verificadores são obtidos e mostre o processo de cálculo.
 
-## Ordenar com critério customizado
-Dado um array de strings, crie uma função que as ordene por tamanho (mais curtas primeiro).
+# Ordenar com Critério Customizado
+Organize um array de strings em ordem crescente de tamanho, colocando as mais curtas primeiro. Demonstre o processo de ordenação com exemplos.
 
-## Filtrar objetos
-Dado um array de objetos com propriedades nome e idade, escreva uma função que filtre os objetos para retornar apenas aqueles onde a idade é maior que 18.
+# Filtrar Objetos
+Dado um array de objetos com propriedades nome e idade, selecione manualmente aqueles que possuem idade maior que 18, mostrando o critério utilizado para a seleção.
 
-## Contar palavras únicas
-Crie uma função que conte quantas palavras únicas existem em uma string.
+# Contar Palavras Únicas
+Conte quantas palavras únicas existem em uma string, mostrando o processo de separação e eliminação de duplicatas, se houver, até chegar no número de palavras únicas.
 
-## Mapeamento de usuários
-Dado um array de objetos usuarios, cada um com uma propriedade nome e email, crie uma função que retorne um novo objeto mapeando email como chave e nome como valor.
+# Mapeamento de Usuários
+Dado um array de objetos usuarios, cada um contendo nome e email, crie uma lista onde cada email seja associado ao nome correspondente. Explique como construir o mapa de relacionamentos entre email e nome.
 
-## Agrupamento por categoria
-Dado um array de objetos produtos, onde cada um tem uma categoria, crie uma função que agrupe os produtos por categoria.
+# Agrupamento por Categoria
+Dado um array de objetos produtos, onde cada um tem uma categoria, agrupe os produtos por categoria. Mostre o processo e os critérios utilizados para realizar o agrupamento.
 
-## Função recursiva de soma
-Implemente uma função recursiva que calcule a soma de todos os números de um array.
+# Soma Recursiva
+Utilize uma abordagem passo a passo para somar os elementos de um array sem usar laços convencionais, demonstrando como chegar ao resultado acumulado.
 
-## Validar data
-Escreva uma função que valide uma data no formato DD/MM/YYYY.
+# Validação de Data
+Verifique se uma data está no formato DD/MM/YYYY, mostrando os critérios de validação para dia, mês e ano. Explique o que considerar para confirmar a validade do formato.
 
-## Contagem de dias entre datas
-Crie uma função que receba duas datas (formato Date) e retorne a quantidade de dias entre elas.
+# Contagem de Dias entre Datas
+Calcule a quantidade de dias entre duas datas fornecidas (no formato Date), explicando o processo de subtração de datas e conversão do resultado em dias.
 -----------------------------------------------------------------------------------------
