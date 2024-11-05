@@ -24,7 +24,7 @@ Dada uma lista de números, crie uma função que calcule e retorne a média dos
 Escreva uma função que receba um array de números e retorne o maior número.✅
 
 ## Ordenar array
-Crie uma função que ordene um array de números em ordem crescente.
+Crie uma função que ordene um array de números em ordem crescente.✅
 
 ## Conversão de temperatura
 Escreva uma função que converta graus Celsius para Fahrenheit e vice-versa.
