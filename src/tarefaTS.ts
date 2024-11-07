@@ -21,35 +21,39 @@ interface Compromisso {
     status: Status
 }
 
+// Guarda os compromissos neste array 
 let gerenciamentDeCompromisso:Compromisso[] = [];
 
+// Isere um novo compromisso
 function inserirCompromisso (compromisso: Compromisso):void {
     gerenciamentDeCompromisso.push(compromisso);
 }
 
+// Lista os compromissos
 function listarCompromisso ():Compromisso[] {
     return gerenciamentDeCompromisso;
 }
 
+// Lista os compromissos por status
 function listarPorStatus (statusCompromisso: Status):any {
+    const filtro = gerenciamentDeCompromisso.filter((filter) => {
+        return filter.status == statusCompromisso
+    })
+    return filtro
+}
 
-    if(statusCompromisso === Status.Pendente) {
-        const statusDoComp = gerenciamentDeCompromisso.filter((comp) => {
-            return comp.status == Status.Pendente
-        })    
-        return statusDoComp
-    }else if(statusCompromisso === Status.Concluido){
-        const statusDoComp = gerenciamentDeCompromisso.filter((comp) => {
-            return comp.status == Status.Concluido
-        }) 
-        return statusDoComp
-    } else {
-        const statusDoComp = gerenciamentDeCompromisso.filter((comp) => {
-            return comp.status == Status.Cancelado
-        }) 
-        return statusDoComp
+// Alterar compromisso
+function alterarCompromisso (comp:Compromisso):any {
+    comp.titulo = 'Cinema - cinelaser'
+}
+
+// Deletar compromisso
+function deletarCompromisso (arr: Compromisso[], id: Compromisso):Compromisso[] {
+    let arrAtualizado = [];
+    for(let i = 0, j = arr.length; i !== j; i++){
+        if(arr[i] !== id) arrAtualizado.push(arr[i])
     }
-    
+    return arrAtualizado
 }
 
 let compro1:Compromisso = {
@@ -77,6 +81,13 @@ inserirCompromisso(compro1)
 inserirCompromisso(compro2)
 inserirCompromisso(compro3)
 
-console.log(listarPorStatus(Status.Concluido));
+alterarCompromisso(compro1)
+
+console.log('---------------------Lista Atualizada---------------------------------------');
+console.log(deletarCompromisso(gerenciamentDeCompromisso, gerenciamentDeCompromisso[1]));
+
+console.log('---------------------Lista filtrada por status------------------------------');
+console.log(listarPorStatus(Status.Pendente));
+
 
  
