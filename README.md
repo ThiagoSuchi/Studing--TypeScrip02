@@ -32,7 +32,7 @@ Escreva uma função que converta graus Celsius para Fahrenheit e vice-versa.✅
 
 # Exercícios intermediários
 ## Números Fibonacci
-Escreva uma função que receba um número n e retorne os n primeiros números da sequência de Fibonacci.
+Escreva uma função que receba um número n e retorne os n primeiros números da sequência de Fibonacci.✅
 
 ## Filtro de palavras
 Crie uma função que receba uma string e uma palavra e remova todas as ocorrências dessa palavra na string.
