@@ -15,59 +15,67 @@ enum Status {
 }
 
 interface Compromisso {
-    dataHora: Date,
+    data: Date,
+    hora: string,
     titulo: string,
     descricao: string,
     status: Status
 }
 
+// Guarda os compromissos neste array 
 let gerenciamentDeCompromisso:Compromisso[] = [];
 
+// Insere um novo compromisso
 function inserirCompromisso (compromisso: Compromisso):void {
     gerenciamentDeCompromisso.push(compromisso);
 }
 
+// Listar os compromissos
 function listarCompromisso ():Compromisso[] {
     return gerenciamentDeCompromisso;
 }
 
+// Listar os compromissos por status
 function listarPorStatus (statusCompromisso: Status):any {
+    const filtro = gerenciamentDeCompromisso.filter((filter) => {
+        return filter.status == statusCompromisso
+    })
+    return filtro
+}
 
-    if(statusCompromisso === Status.Pendente) {
-        const statusDoComp = gerenciamentDeCompromisso.filter((comp) => {
-            return comp.status == Status.Pendente
-        })    
-        return statusDoComp
-    }else if(statusCompromisso === Status.Concluido){
-        const statusDoComp = gerenciamentDeCompromisso.filter((comp) => {
-            return comp.status == Status.Concluido
-        }) 
-        return statusDoComp
-    } else {
-        const statusDoComp = gerenciamentDeCompromisso.filter((comp) => {
-            return comp.status == Status.Cancelado
-        }) 
-        return statusDoComp
+// Alterar compromisso
+function alterarCompromisso (comp:Compromisso):any {
+    comp.titulo = 'Cinema - cinelaser'
+}
+
+// Deletar compromisso
+function deletarCompromisso (arr: Compromisso[], id: Compromisso):Compromisso[] {
+    let arrAtualizado = [];
+    for(let i = 0, j = arr.length; i !== j; i++){
+        if(arr[i] !== id) arrAtualizado.push(arr[i])
     }
-    
+    return arrAtualizado
 }
 
 let compro1:Compromisso = {
-    dataHora: new Date('2024-11-06T19:30:00'),
+    data: new Date('2024-11-06'),
+    hora: '19:30',
     titulo: 'Cinema',
     descricao: 'Ir ao cinema as 19:30, com a família assistir Venom',
     status: Status.Concluido
 }
 
 let compro2:Compromisso = {
-    dataHora: new Date('2024-11-02T20:00:00'),
+    data: new Date('2024-11-02'),
+    hora: '20:00',
     titulo: 'Academia',
     descricao: 'Treino as 20hr na academia atmus.',
     status: Status.Cancelado
 }
 
 let compro3:Compromisso = {
-    dataHora: new Date('2024-11-22T15:30:00'),
+    data: new Date('2024-11-22'),
+    hora: '15:30',
     titulo: 'Entrega',
     descricao: 'Fazer uma entrega de um kit de alimentos na igreja Batista Esperença as 15:30',
     status: Status.Pendente
@@ -77,6 +85,14 @@ inserirCompromisso(compro1)
 inserirCompromisso(compro2)
 inserirCompromisso(compro3)
 
-console.log(listarPorStatus(Status.Concluido));
+alterarCompromisso(compro1)
+
+// Formatando datas
+console.log('---------------------Lista Atualizada---------------------------------------');
+console.log(deletarCompromisso(gerenciamentDeCompromisso, gerenciamentDeCompromisso[1]));
+
+console.log('---------------------Lista filtrada por status------------------------------');
+console.log(listarPorStatus(Status.Pendente));
+
 
  
