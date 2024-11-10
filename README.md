@@ -27,7 +27,7 @@ Escreva uma função que receba um array de números e retorne o maior número.�
 Crie uma função que ordene um array de números em ordem crescente.✅
 
 ## Conversão de temperatura
-Escreva uma função que converta graus Celsius para Fahrenheit e vice-versa.
+Escreva uma função que converta graus Celsius para Fahrenheit e vice-versa.✅
 -----------------------------------------------------------------------------------------
 
 # Exercícios intermediários
