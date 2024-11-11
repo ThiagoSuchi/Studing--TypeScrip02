@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "dev": "nodemon --exec ts-node ./src/Exe12.ts",
+    "dev": "nodemon --exec ts-node ./src/Exe13.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
