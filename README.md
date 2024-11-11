@@ -35,7 +35,7 @@ Escreva uma função que converta graus Celsius para Fahrenheit e vice-versa.✅
 Escreva uma função que receba um número n e retorne os n primeiros números da sequência de Fibonacci.✅
 
 ## Filtro de palavras
-Crie uma função que receba uma string e uma palavra e remova todas as ocorrências dessa palavra na string.
+Crie uma função que receba uma string e uma palavra e remova todas as ocorrências dessa palavra na string.✅
 
 ## Contar letras
 Escreva uma função que conte e retorne o número de ocorrências de cada letra em uma string.
