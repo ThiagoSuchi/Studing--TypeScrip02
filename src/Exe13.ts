@@ -1,29 +1,31 @@
 // Exercício 13 - Escreva uma função que conte e retorne o número de ocorrências de cada letra em uma string.
 
-interface QtdCadaLetra {
-    letraMaiuscula: string[],
-    letraMinuscula: string[]
-}
 
-let letras: QtdCadaLetra = {
-    letraMaiuscula: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'],
-    letraMinuscula: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-}
+function contagemDeLetras(string: string) {
+    let verificadorLetras: string[] = []
+    const letra: string[] = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+    let l = 0
 
-function contagemDeLetras(string: string, letras: QtdCadaLetra) {
-    let str = string.split('')
-    let idx = 0
-    
-    for (let i = 0; i < letras.letraMinuscula.length; i++) {
-        if (str[idx] === letras.letraMinuscula[i]) {
-            console.log(str[idx]);
-            idx++  
-        } else {
+    // Verifica quantos 'o' tem no texto
+    for (let i = 0; i < string.length; i++) {
+        if (string[i] === 'o') {
+            verificadorLetras.push(string[i])
         }
     }
 
+    let qtd = verificadorLetras.length
+    
+    // imprime na tela a letra e a quantidade dela no texto
+    for (let i = 0; i < letra.length; i++) {
+        if (letra[i] === verificadorLetras[l]) {
+            console.log(`${letra[i]} = ${qtd}`);
+        }
+    }
 
+    return verificadorLetras
 }
 
-const doc: string = 'Ooo sol pediu a lua em casamento! E aaa luuuaa disse não sei não sei, me dá um tempo!'
-contagemDeLetras(doc, letras);
+
+const doc: string = 'ooo sol pediu a lua em casamento, e aaa luuuaa disse não sei não sei, me dá um tempo!'
+console.log(contagemDeLetras(doc));
+
