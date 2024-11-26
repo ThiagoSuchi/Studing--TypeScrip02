@@ -13,19 +13,29 @@ interface Event {
 }
 
 const eventos: Event[] = []
-console.log(eventos);
 
-function adicionarEvent(event: Event) {
-    eventos.push(event)
+
+// Adcionando eventos
+function adicionarEvent(event: Event[]) {
+    event.map((eve) => eventos.push(eve))
 }
 
-const evento: Event[] = [
-    { id: uuidv4(), name: 'Show Morada/Banda Gospel', date: new Date('2024-11-23') },
-    { id: uuidv4(), name: 'Stand-up Murilo Couto', date: new Date('2024-10-24') },
-    { id: uuidv4(), name: 'Inauguração Shopping Vilhena-RO', date: new Date('2024-10-28') },
-    { id: uuidv4(), name: 'Stand-up Afonso Padilha', date: new Date('2024-02-10') },
-    { id: uuidv4(), name: 'Show Projeto Sola', date: new Date('2024-12-03') },
-    { id: uuidv4(), name: 'Inauguração Park Aquático', date: new Date('2024-11-27') },
-]
+// Listando os eventos
+function listaEventos () {
+    const evento: Event[] = [
+        { id: uuidv4(), name: 'Show Morada/Banda Gospel', date: new Date('2024-11-23') },
+        { id: uuidv4(), name: 'Stand-up Murilo Couto', date: new Date('2024-10-24') },
+        { id: uuidv4(), name: 'Inauguração Shopping Vilhena-RO', date: new Date('2024-10-28') },
+        { id: uuidv4(), name: 'Stand-up Afonso Padilha', date: new Date('2024-02-10') },
+        { id: uuidv4(), name: 'Show Projeto Sola', date: new Date('2024-12-03') },
+        { id: uuidv4(), name: 'Inauguração Park Aquático', date: new Date('2024-11-27') },
+    ]
+    adicionarEvent(evento)
+    return evento
+}
 
-adicionarEvent(evento[1])
+console.log(`
+Evento: ${listaEventos()[0].name}
+Data: ${listaEventos()[0].date.getUTCDate()}/${listaEventos()[0].date.getUTCMonth() + 1}/${listaEventos()[0].date.getUTCFullYear()} 
+`);
+ 
