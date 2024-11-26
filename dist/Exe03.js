@@ -1,4 +1,3 @@
-"use strict";
 function factoryNumber(num) {
     let resultado = 1;
     for (let i = 1; i <= num; i++) {
@@ -7,3 +6,4 @@ function factoryNumber(num) {
     return resultado;
 }
 console.log(factoryNumber(4));
+export {};

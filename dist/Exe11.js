@@ -1,4 +1,3 @@
-"use strict";
 function fibonaci(n) {
     let mainNumbers = [0, 1];
     for (let i = 2; i < n; i++) {
@@ -7,3 +6,4 @@ function fibonaci(n) {
     return mainNumbers.slice(1, n);
 }
 console.log(fibonaci(5));
+export {};

@@ -1,4 +1,3 @@
-"use strict";
 var Status;
 (function (Status) {
     Status["Pendente"] = "Pendente";
@@ -58,3 +57,4 @@ console.log('---------------------Lista Atualizada------------------------------
 console.log(deletarCompromisso(gerenciamentDeCompromisso, gerenciamentDeCompromisso[1]));
 console.log('---------------------Lista filtrada por status------------------------------');
 console.log(listarPorStatus(Status.Pendente));
+export {};

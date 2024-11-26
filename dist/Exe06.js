@@ -1,4 +1,3 @@
-"use strict";
 function divisivel(numA, numB) {
     const resto = numA % numB;
     if (resto == 0)
@@ -19,3 +18,4 @@ if (ePrimo(numero)) {
 else {
     console.log('não é primo!');
 }
+export {};

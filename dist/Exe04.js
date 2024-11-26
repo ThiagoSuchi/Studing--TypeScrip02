@@ -1,4 +1,3 @@
-"use strict";
 let arrayAlfabeto = ['ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
 let arrayLetraIsolada = [];
 let arrayInvertido = [];
@@ -16,3 +15,4 @@ for (let i = nome.length - 1; i >= 0; i--) {
     stringInvertida += nome[i];
 }
 console.log(stringInvertida);
+export {};

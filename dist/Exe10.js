@@ -1,4 +1,3 @@
-"use strict";
 function conversor(temperatura, escala) {
     if (escala === 'Celsius' || escala === 'C') {
         let Fahrenheit = temperatura * 1.8 + 32;
@@ -10,3 +9,4 @@ function conversor(temperatura, escala) {
     }
 }
 console.log(conversor(68, 'Celsius'));
+export {};

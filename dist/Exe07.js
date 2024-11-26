@@ -1,4 +1,3 @@
-"use strict";
 function numMedia(num) {
     let soma = 0;
     for (let i = 0; i < num.length; i++) {
@@ -18,3 +17,4 @@ function numMedia2(num) {
 }
 const numeros2 = [20, 30, 50, 70, 40, 17, 98];
 console.log('Utilizando o método reduce - ' + numMedia2(numeros2));
+export {};

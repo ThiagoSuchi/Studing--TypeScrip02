@@ -1,4 +1,3 @@
-"use strict";
 function quantidadeVogais(texto) {
     const vogais = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'];
     let vogaisDaFrase = '';
@@ -14,3 +13,4 @@ function quantidadeVogais(texto) {
     return numeroDeVogais;
 }
 console.log(quantidadeVogais('Eae meu parceiro, vamos comçar a praticar TypeScript?'));
+export {};

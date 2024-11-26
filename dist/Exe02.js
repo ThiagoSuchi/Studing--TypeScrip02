@@ -1,4 +1,3 @@
-"use strict";
 function imparPar(number) {
     if (number % 2 === 0) {
         console.log('Este número é Par!');
@@ -8,3 +7,4 @@ function imparPar(number) {
     }
 }
 imparPar(9);
+export {};
