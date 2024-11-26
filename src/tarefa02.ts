@@ -8,7 +8,6 @@ Obs.: utilize o pacote npm chalk para formatar a saída no console.
 */
 
 import { v4 as uuidv4 } from 'uuid';
-import chalk from 'chalk';
 
 interface Produto {
     id: string,
@@ -29,6 +28,6 @@ const produtos: Produto[] = [
 ];
 
 produtos.forEach((prod) => {
-    console.log(chalk.bgGray.blue(`Produto: ${prod.nome} - (R$${prod.preco.toFixed(2)})
------------------------------------------------------------------`));  
+    console.log(`Produto: ${prod.nome} - (R$${prod.preco.toFixed(2)})
+-----------------------------------------------------------------`);  
 })

@@ -1,22 +1,19 @@
 {
   "name": "exerciciostypescript",
   "version": "1.0.0",
-  "type": "module",
-  "description": "## Soma simples Crie uma função que receba dois números e retorne a soma deles.✅",
+  "description": "Crie uma função que receba dois números e retorne a soma deles.✅",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "dev": "nodemon --exec ts-node ./dist/tarefa03.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon -r ts-node/register ./src/tarefa03.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^22.8.0",
+    "@types/node": "^22.10.0",
     "nodemon": "^3.1.7",
     "ts-node": "^10.9.2",
-    "typescript": "^5.6.3"
+    "typescript": "^5.7.2"
   },
   "dependencies": {
     "chalk": "^5.3.0",
