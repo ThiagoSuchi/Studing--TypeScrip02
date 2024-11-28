@@ -4,7 +4,7 @@
   "description": "Crie uma função que receba dois números e retorne a soma deles.✅",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon -r ts-node/register ./src/tarefa03.ts"
+    "start": "nodemon -r ts-node/register"
   },
   "keywords": [],
   "author": "",
