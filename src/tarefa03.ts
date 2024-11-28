@@ -5,7 +5,6 @@
 - Crie uma função que receba um array de eventos e exiba os eventos futuros (data maior que a atual).
 */
 
-
 interface Evento {
     id: number,
     name: string,
