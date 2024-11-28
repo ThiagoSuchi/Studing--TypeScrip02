@@ -9,7 +9,7 @@
 interface Evento {
     id: number,
     name: string,
-    date: Date | string
+    date: string
 }
 
 const eventos: Evento[] = []
@@ -41,9 +41,14 @@ function deleteEvent(evento: Evento[], nome: Evento) {
 }
 
 // Filtrando eventos com datas futuras
-function eventFuturo() {
-    console.log(eventos[0].date);
-     
+function eventFuturo(e: Evento[]) {
+   const eventoFuturo = e.filter((e) => {
+        const dataAtual = new Date();
+        const [dia, mes, ano] = e.date.split('/').map(Number);
+        const dataConvertida = new Date(ano, mes - 1, dia);
+        return dataConvertida > dataAtual;
+   })
+   return eventoFuturo;
 }
 
 // Filtrando Eventos pelo id
@@ -62,16 +67,19 @@ function listaEventos (): Evento[] {
 adicionarEvent('Venom3 Nos Cinemas', '12/09/2024')
 adicionarEvent('Show Projeto Sola', '01/02/2025')
 adicionarEvent('Stand-up Afonso Padilha', '24/09/2024')
-adicionarEvent('Inauguração Shopping', '11/11/2024')
+adicionarEvent('Inauguração Shopping', '11/12/2024')
 adicionarEvent('Casamento Amigos', '22/10/2024')
 
-console.log('--------------------------------------------------------------------------');
+console.log('-----------------------------------------------------------------------------------------');
 console.log(listaEventos());
-console.log('-------------------- Lista Atualizada: --------------------------');
+console.log('-------------------- Lista Atualizada: --------------------------------------------------');
 console.log(deleteEvent(eventos, eventos[1]));
-console.log('------------------------- Evento Filtrado Pelo Id -----------------------');
+console.log('------------------------- Evento Filtrado Pelo Id ---------------------------------------');
+console.log();
 console.log(...filtrarEvento(3, eventos));
-console.log('--------------------------------------------------------------------------');
+console.log();
+console.log('---------------------------------Eventos Futuros-----------------------------------------');
+console.log(eventFuturo(eventos));
 
 
 
