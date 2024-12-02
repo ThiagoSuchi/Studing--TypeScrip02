@@ -53,12 +53,37 @@ function novoProduto(nome: string, preco: number, qtd: number) {
     addProduto(adicionandoProd)
 }
 
+// Atualizando a quantidade de produto
+const atualizarQuantidade = (id: string, qtd: number):void => {
+    produtos.splice(0, produtos.length, ...produtos.map((prod) => {
+        if(prod.id === id) {
+            return { ...prod, quantidade: qtd }; // O objeto está entre chaves ({}) porque queremos criar um novo objeto que contém todas as propriedades do objeto original prod, mas com a propriedade quantidade atualizada.
+        } 
+        return prod
+    }))
+}
+// Valor total dos produtos no inventário
+const getValorTotal = ():number => {
+    return produtos.map((prod) => prod.preco).reduce((acc, prod) => acc + prod)
+}
+
+// Adicionando produtos no inventário
 novoProduto('Filtro Mann - Óleo do motor - S10 2.8 2012/2020', 47.90, 120)
 novoProduto('Filtro Mann - Combustível - S10 2.8 2012/2020', 157.30, 243)
 novoProduto('Filtro Wega - Óleo do motor - GM Celta 1.0 2014/2020', 38.50, 300)
 novoProduto('Filtro Wega - Ar Condicionado - Honda Civic 2.0 2013/2016', 157.30, 243)
+
+// Atualizando a quantidade de um dos produtos
+atualizarQuantidade(produtos[2].id, 450)
+
+// Removendo um produto
 removerProduto(produtos[1].id)
+
+// Imprimindo o valor total do inventário
+console.log(`Valor total dos produtos R$ ${getValorTotal().toFixed(3)},00`);
+
 console.log(produtos);
+
 
 
 
