@@ -17,9 +17,9 @@ Crie um validador de dados para cadastro de usuários em TypeScript.
 - Um usuário com um único campo inválido. 
 */
 
-import { validingEmail } from "./data/emailValid";
-import { senhaValida } from "./data/senhaValid";
-import { Usuario } from "./data/interface";
+import { validingEmail } from "./data05/emailValid";
+import { senhaValida } from "./data05/senhaValid";
+import { Usuario } from "./data05/interface";
 
 export function validarUsuario(usuario: Usuario): string[] {
     const erro: { [key: string]: string[] } = {
