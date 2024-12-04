@@ -7,7 +7,7 @@
 Obs.: utilize o pacote npm chalk para formatar a saída no console.
 */
 
-import { produtos } from "./data02/array";
+import { produtos } from "../tarefa04/tarefa04";
 
 produtos.forEach((prod) => {
     console.log(`Produto: ${prod.nome} - (R$${prod.preco.toFixed(2)})

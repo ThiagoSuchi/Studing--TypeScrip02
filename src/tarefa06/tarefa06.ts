@@ -10,3 +10,19 @@ Você vai manipular uma lista de produtos para aplicar descontos e filtrar os re
 - Aplique um desconto de 15% em todos os produtos.
 - Filtre apenas os produtos da categoria "eletrônicos".
 */
+import { v4 as uuidv4 } from 'uuid';
+import { Product } from './models/interface';
+
+
+export function aplicarDisconto(produtos: Product[], desconto: number): Product[] {
+    const percent = desconto / 100;
+    for(let i = 0; i < produtos.length; i++){
+        var descontoProd = produtos[i].preco * percent
+    }
+
+    const newValueProd = produtos.map((prod) => prod.preco - descontoProd)
+    return produtos
+}
+
+
+

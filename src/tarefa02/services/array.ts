@@ -1,4 +1,4 @@
-import { Produto } from './interface';
+import { Produto } from '../models/interface';
 import { v4 as uuidv4 } from 'uuid';
 
 export const produtos: Produto[] = [
