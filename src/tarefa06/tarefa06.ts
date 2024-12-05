@@ -12,17 +12,39 @@ Você vai manipular uma lista de produtos para aplicar descontos e filtrar os re
 */
 import { v4 as uuidv4 } from 'uuid';
 import { Product } from './models/interface';
+import { Category } from './models/enum';
+import { filtrarPorCategoria } from './services/filterCategory';
 
 
 export function aplicarDisconto(produtos: Product[], desconto: number): Product[] {
     const percent = desconto / 100;
+
     for(let i = 0; i < produtos.length; i++){
-        var descontoProd = produtos[i].preco * percent
+        const descontoProd = produtos[i].preco * percent;
+        const newValueProd = produtos.map((prod) => prod.preco - descontoProd)
+        produtos[i].preco = newValueProd[i]
     }
 
-    const newValueProd = produtos.map((prod) => prod.preco - descontoProd)
     return produtos
 }
 
 
+export const produtos: Product[] = [
+    {id: uuidv4(), nome: 'Televisão LG', preco: 1800, categoria: Category.eletronicos },
+    {id: uuidv4(), nome: 'Luva Box 14oz', preco: 290, categoria: Category.esporte },
+    {id: uuidv4(), nome: 'Mesa de computador - Cinza escuro', preco: 800, categoria: Category.moveis },
+    {id: uuidv4(), nome: 'PlayStation 5 PRO', preco: 6200, categoria: Category.eletronicos },
+]
+
+
+const produtosComDesconto = aplicarDisconto(produtos, 15);
+
+const produtosFiltradosPorCategoria = filtrarPorCategoria(produtos, 'eletrônicos');
+
+console.log();
+console.log('---------------- Produtos com Desconto -----------------');
+console.log(...produtosComDesconto);
+console.log();
+console.log('---------------- Produtos Filtrados ----------------');
+console.log(...produtosFiltradosPorCategoria);
 

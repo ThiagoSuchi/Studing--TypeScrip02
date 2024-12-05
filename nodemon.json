@@ -1,6 +1,6 @@
 {
     "watch": ["src"],
     "ext": "ts",
-    "exec": "npx ts-node ./src/tarefa06.ts"
+    "exec": "npx ts-node ./src/tarefa06/tarefa06.ts"
 }
   
