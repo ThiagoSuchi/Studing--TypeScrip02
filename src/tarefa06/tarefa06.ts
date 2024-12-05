@@ -21,8 +21,8 @@ export function aplicarDisconto(produtos: Product[], desconto: number): Product[
 
     for(let i = 0; i < produtos.length; i++){
         const descontoProd = produtos[i].preco * percent;
-        const newValueProd = produtos.map((prod) => prod.preco - descontoProd)
-        produtos[i].preco = newValueProd[i]
+        const newValueProd = produtos[i].preco - descontoProd
+        produtos[i].preco = newValueProd
     }
 
     return produtos
