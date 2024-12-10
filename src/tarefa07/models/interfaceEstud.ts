@@ -2,7 +2,7 @@ import { Estados } from "./enum";
 import { Cidades } from "./interfaceCity";
 
 
-export interface Etudantes {
+export interface Estudantes {
     id: string,
     nome: string,
     email: string,

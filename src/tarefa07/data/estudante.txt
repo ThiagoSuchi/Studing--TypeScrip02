@@ -1,0 +1,8 @@
+Estudante:
+    ID - b734d46e-61d5-4895-80a3-1863009a1e75
+    nome - Ana Clara
+    email - anninhaMattos@gmail.com
+    endereço:
+    cidade - Vilhena
+    estado - Rondônia
+    
