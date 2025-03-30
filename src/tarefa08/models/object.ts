@@ -1,5 +1,5 @@
 export const changeRates = {
-    USD: 6.10,
-    EUR: 6.34,
+    USD: 1,
+    EUR: 1,
     BRL: 1
 }
